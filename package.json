@@ -1,0 +1,27 @@
+{
+  "name": "serverless-edge-functions",
+  "version": "1.0.0",
+  "description": "Práctica de implementación de edge functions con Netlify",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nahuelmatiasdelacruz/serverless-edge-function.git"
+  },
+  "author": "Nahuel De La Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nahuelmatiasdelacruz/serverless-edge-function/issues"
+  },
+  "homepage": "https://github.com/nahuelmatiasdelacruz/serverless-edge-function#readme",
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "rimraf": "^6.0.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.4"
+  }
+}
